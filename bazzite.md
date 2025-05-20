@@ -66,10 +66,11 @@ Parallell to [WSL](https://learn.microsoft.com/en-us/windows/wsl/about).
 * Installed Battle.net via Lutris
     > Add Game to Lutris > Search the Lutris website for installers > Search for Battle.net
 * I have only been able to get Battle.net to launch when using Proton - Experimental as the runner.
-    * Ran into hangs when using runners besides Proton - Experimental including : 
-        * Battle.net Update Agent went to sleep. Attempting to wake it up... (BLZBNTBNA00000005)
-        * Updating Battle.net Update Agent... (45%)
     > Game > Configure > Runner options > Wine version > Proton - Experimental
+* Ran into hangs when using runners besides Proton - Experimental including : 
+    * Battle.net Update Agent went to sleep. Attempting to wake it up... (BLZBNTBNA00000005)
+    * Updating Battle.net Update Agent... (45%)
+
 
 SteamCMD can be used to download Proton - Experimental. 
 
