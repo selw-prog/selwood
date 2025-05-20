@@ -1,6 +1,6 @@
-# [Bazzite]((https://bazzite.gg/) )
+# [Bazzite](https://bazzite.gg/)
 
-Currently have dual boot configured while I migrate off of Windows.
+Currently have dual boot configured while I migrate completely off of Windows.
 
 ## PC Specs
 ![specs](https://github.com/user-attachments/assets/8a3c8385-85db-4a5f-938d-40c2f02c2d4a)
