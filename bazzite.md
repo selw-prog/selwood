@@ -31,14 +31,6 @@ flatpak install com.discordapp.Discord
 
 #### Visual Studio Code
 
-Run commands on the host from inside the sandbox using [Shell Integrated Terminal](https://github.com/flathub/com.visualstudio.code?tab=readme-ov-file#use-host-shell-in-the-integrated-terminal)
-
-Support for [SDKs](https://github.com/flathub/com.visualstudio.code?tab=readme-ov-file#support-for-language-extension) on the host system
-* helm TODO 📝
-* kubectl TODO 📝
-* Powershell TODO 📝
-* Python TODO 📝
-
 ### Homebrew
 
 [Homebrew](https://docs.bazzite.gg/Installing_and_Managing_Software/Homebrew/) - Install applications intended to run inside of the terminal (CLI/TUI).
@@ -85,19 +77,5 @@ quit
 
 * Alternatively, you can go to your Steam library and download it - ensure you have Tools displayed and it should appear as an option. 
     * This download will also take place if you have a game's properties configured to use Proton - Experimental. 
-
-
-### GOG
-
-Used the [json](https://lutris.net/api/installers/gog-galaxy-windows?format=json) file from [lutris](https://lutris.net/games/gog-galaxy/).
-
-
-### Epic Games
-
-TODO 📝 I don't think i have an Epic Games account
-
-### Riot Games
-
-TODO 📝
 
 ### Emulators
