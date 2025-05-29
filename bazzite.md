@@ -3,7 +3,7 @@
 Currently have dual boot configured while I migrate completely off of Windows.
 
 ## PC Specs
-![specs](https://github.com/user-attachments/assets/8a3c8385-85db-4a5f-938d-40c2f02c2d4a)
+![specs](https://github.com/user-attachments/assets/70ed75e8-33d4-43b9-abd3-fc0ad0c6321d)
 
 
 ## Install
