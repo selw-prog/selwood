@@ -27,6 +27,7 @@ flatpak install org.kde.gcompris
 flatpak install org.keepassxc.KeePassXC
 flatpak install com.spotify.Client
 flatpak install com.discordapp.Discord
+flatpak install org.libreoffice.LibreOffice
 ```
 
 #### Visual Studio Code
