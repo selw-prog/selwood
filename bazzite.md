@@ -28,6 +28,7 @@ flatpak install org.keepassxc.KeePassXC
 flatpak install com.spotify.Client
 flatpak install com.discordapp.Discord
 flatpak install org.libreoffice.LibreOffice
+flatpak install com.atlauncher.ATLauncher
 ```
 
 #### Visual Studio Code
