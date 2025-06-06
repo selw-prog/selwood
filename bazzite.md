@@ -29,6 +29,7 @@ flatpak install com.spotify.Client
 flatpak install com.discordapp.Discord
 flatpak install org.libreoffice.LibreOffice
 flatpak install com.atlauncher.ATLauncher
+flatpak install com.mikrotik.WinBox
 ```
 
 #### Visual Studio Code
