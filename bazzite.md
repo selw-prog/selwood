@@ -8,8 +8,6 @@ Currently have dual boot configured while I migrate completely off of Windows.
 
 ## Install
 
-
-
 ## Apps
 
 Here is what Bazzite [suggests to manage software](https://docs.bazzite.gg/Installing_and_Managing_Software/)
@@ -32,8 +30,6 @@ flatpak install com.atlauncher.ATLauncher
 flatpak install com.mikrotik.WinBox
 ```
 
-#### Visual Studio Code
-
 ### Homebrew
 
 [Homebrew](https://docs.bazzite.gg/Installing_and_Managing_Software/Homebrew/) - Install applications intended to run inside of the terminal (CLI/TUI).
@@ -42,6 +38,7 @@ Parallell to homebrew on Mac OS X.
 ```bash
 brew install rclone
 ```
+### Visual Studio Code
 
 ### Distrobox
 
