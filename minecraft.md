@@ -86,4 +86,4 @@ For detailed setup or optimization steps, consult the official Minecraft documen
 ## Exposing Server Externally
 
 I have a CGNAT IP so simple port forwarding is not a solution. I could host the server in a public cloud but I'd prefer not to introduce cost to this.
-I found some software called [playit](playit.gg) and installed that on my VM. Their free tier seems OK at this time. Configuration of this software is simple.
+I found some software called [playit](https://playit.gg/) and installed that on my VM. Their free tier seems OK at this time. Configuration of this software is simple.
