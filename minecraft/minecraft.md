@@ -5,6 +5,7 @@
 * This is running as a systemd service.
 * Grok was used to generate the recommendations listed below as well as the majority of the backup script.
 
+## Screenfetch 
 ![minecraft-vm-screenfetch](https://github.com/user-attachments/assets/24c714c0-f044-49af-a565-6d2463bd57cf)
 
 ## Recommended VM Specs
