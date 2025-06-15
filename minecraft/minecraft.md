@@ -8,6 +8,11 @@
 ## Screenfetch 
 ![minecraft-vm-screenfetch](https://github.com/user-attachments/assets/24c714c0-f044-49af-a565-6d2463bd57cf)
 
+## Exposing Server Externally
+
+I have a CGNAT IP so port forwarding is not a solution. I prefer not to introduce cost to this at this time.
+I found software called [playit](https://playit.gg/) and installed that on my VM.
+
 ## Recommended VM Specs
 
 ### 1. CPU
@@ -87,8 +92,3 @@
 - **Troubleshooting**: Check the `logs` folder or the [Minecraft Wiki](https://minecraft.wiki/) for help.
 
 For detailed setup or optimization steps, consult the official Minecraft documentation or request further assistance.
-
-## Exposing Server Externally
-
-I have a CGNAT IP so port forwarding is not a solution. I prefer not to introduce cost to this at this time.
-I found software called [playit](https://playit.gg/) and installed that on my VM.
