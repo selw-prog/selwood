@@ -1,7 +1,11 @@
 # Minecraft Server
 
-My goal is to host a vanilla Minecraft server on a Proxmox VM on my local network. I do not intend to have more than 1-3 players online at a given time. 
-I generated most of the below using Grok.
+* I am hosting a vanilla Minecraft server on my local network. This is running on a Proxmox VM and is built to handle 1-3 players.
+* Backups are taken daily at 3AM and pushed to Google Drive via rclone. The last 2 backups are retained.
+* This is running as a systemd service.
+* Grok was used to generate the recommendations listed below as well as the majority of the backup script.
+
+![minecraft-vm-screenfetch](https://github.com/user-attachments/assets/24c714c0-f044-49af-a565-6d2463bd57cf)
 
 ## Recommended VM Specs
 
@@ -85,5 +89,5 @@ For detailed setup or optimization steps, consult the official Minecraft documen
 
 ## Exposing Server Externally
 
-I have a CGNAT IP so simple port forwarding is not a solution. I could host the server in a public cloud but I'd prefer not to introduce cost to this.
-I found some software called [playit](https://playit.gg/) and installed that on my VM. Their free tier seems OK at this time. Configuration of this software is simple.
+I have a CGNAT IP so port forwarding is not a solution. I prefer not to introduce cost to this at this time.
+I found software called [playit](https://playit.gg/) and installed that on my VM.
