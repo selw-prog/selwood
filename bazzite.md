@@ -20,7 +20,6 @@ Flatpacks and Distrobox both make the $HOME folder available from the host to th
 
 ```bash
 flatpak install com.google.Chrome
-flatpak install com.visualstudio.code
 flatpak install org.kde.gcompris
 flatpak install org.keepassxc.KeePassXC
 flatpak install com.spotify.Client
