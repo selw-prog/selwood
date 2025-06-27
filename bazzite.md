@@ -28,6 +28,7 @@ flatpak install org.libreoffice.LibreOffice
 flatpak install com.atlauncher.ATLauncher
 flatpak install com.mikrotik.WinBox
 flatpak install com.surfshark.Surfshark
+flatpak install com.stremio.Stremio
 ```
 
 ### Homebrew
