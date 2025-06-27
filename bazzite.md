@@ -39,12 +39,26 @@ Parallell to homebrew on Mac OS X.
 ```bash
 brew install rclone
 ```
-### Visual Studio Code
 
 ### Distrobox
 
 [Distrobox](https://docs.bazzite.gg/Installing_and_Managing_Software/Distrobox/) - Access to most Linux package managers for software that do not support Flatpak and Homebrew and for use as development boxes.
 Parallell to [WSL](https://learn.microsoft.com/en-us/windows/wsl/about).
+
+distrobox.ini
+```bash
+[deb-python]
+image=debian:latest
+home=/home/sean/deb-python
+nvidia=true
+
+[deb-pwsh]
+image=debian:latest
+home=/home/sean/deb-pwsh
+nvidia=true
+```
+
+####
 
 ## Gaming
 
