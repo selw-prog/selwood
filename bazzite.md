@@ -29,6 +29,8 @@ flatpak install com.atlauncher.ATLauncher
 flatpak install com.mikrotik.WinBox
 flatpak install com.surfshark.Surfshark
 flatpak install com.stremio.Stremio
+flatpak install com.unity.UnityHub
+flatpak install com.visualstudio.code
 ```
 
 ### Homebrew
@@ -93,4 +95,27 @@ quit
 * Alternatively, you can go to your Steam library and download it - ensure you have Tools displayed and it should appear as an option. 
     * This download will also take place if you have a game's properties configured to use Proton - Experimental. 
 
-### Emulators
+### Game Development
+
+* Currently I am exploring Unity. I have installed UnityHub and Visual Studio Code (see *FlatPaks* section). I am still working through tutorials.
+
+### Azure Development
+
+* I am using a Debian distrobox instance. Below are commands to install PowerShell and the Az (Azure) module.
+
+```bash
+sudo apt install powershell
+sudo apt-get install -y wget
+source /etc/os-release
+wget -q https://packages.microsoft.com/config/debian/$VERSION_ID/packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+sudo apt-get update
+sudo apt-get install -y powershell
+```
+
+```pwsh
+Install-Module -Name Az -Repository PSGallery 
+Update-Module -Name Az -Force
+Connect-AzAccount
+```
