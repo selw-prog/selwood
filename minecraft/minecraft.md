@@ -2,6 +2,7 @@
 
 * I am hosting a vanilla Minecraft server on my local network. This is running on a Proxmox VM and is built to handle 1-3 players.
 * Backups are taken daily at 3AM and pushed to Google Drive via rclone. The last 2 backups are retained.
+   * I have had rclone stop working on 2 occasions. I believe the API credentials are aging out.
 * This is running as a systemd service.
 * Grok was used to generate the recommendations listed below as well as the majority of the backup script.
 
