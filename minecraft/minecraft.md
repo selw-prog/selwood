@@ -5,6 +5,7 @@
    * I have had rclone stop working on 2 occasions. I believe the API credentials are aging out.
 * This is running as a systemd service.
 * Grok was used to generate the recommendations listed below as well as the majority of the backup script.
+* I was using 3GB of RAM initially which was fine. Once I added rails and redstone I would experience stuttering while on it.
 
 ## Screenfetch 
 ![minecraft-vm-screenfetch](https://github.com/user-attachments/assets/24c714c0-f044-49af-a565-6d2463bd57cf)
