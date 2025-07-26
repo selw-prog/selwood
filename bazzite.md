@@ -31,6 +31,8 @@ flatpak install com.surfshark.Surfshark
 flatpak install com.stremio.Stremio
 flatpak install com.unity.UnityHub
 flatpak install com.visualstudio.code
+flatpak install org.blender.Blender
+flatpak install --user https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
 ```
 
 ### Homebrew
