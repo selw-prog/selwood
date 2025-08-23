@@ -30,7 +30,6 @@ flatpak install com.mikrotik.WinBox
 flatpak install com.surfshark.Surfshark
 flatpak install com.stremio.Stremio
 flatpak install com.unity.UnityHub
-flatpak install com.visualstudio.code
 flatpak install org.blender.Blender
 flatpak install --user https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
 ```
@@ -99,11 +98,11 @@ quit
 
 ### Game Development
 
-* Currently I am exploring Unity. I have installed UnityHub and Visual Studio Code (see *FlatPaks* section). I am still working through tutorials.
+* Currently I am exploring Unity. I'm still trying to get this functional in a Ubuntu distrobox container.
 
 ### Azure Development
 
-* I am using a Debian distrobox instance. Below are commands to install PowerShell and the Az (Azure) module.
+* I am using a Debian distrobox instance. Below are commands to install PowerShell and the Azure module.
 
 ```bash
 sudo apt install powershell
@@ -120,4 +119,10 @@ sudo apt-get install -y powershell
 Install-Module -Name Az -Repository PSGallery 
 Update-Module -Name Az -Force
 Connect-AzAccount
+```
+
+* I also installed the [Azure CLI utility](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?view=azure-cli-latest&pivots=apt).
+
+```bash
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
