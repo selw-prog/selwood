@@ -1,0 +1,40 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files (contain sensitive infrastructure state)
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Ignore override files (often used for temporary or environment-specific changes)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore Terraform variables files that may contain sensitive data
+*.tfvars
+*.tfvars.json
+
+# Ignore Terraform plan files (may contain sensitive data)
+*.tfplan
+*.tfplan.*
+
+# Ignore CLI configuration file
+.terraformrc
+terraform.rc
+
+# Ignore lock files (can be regenerated)
+.terraform.lock.hcl
+
+# Ignore temporary files and directories
+*.bak
+*.swp
+*.tmp
+
+# Ignore local environment files
+.env
+*.env
