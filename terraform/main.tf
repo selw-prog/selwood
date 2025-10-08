@@ -1,4 +1,3 @@
-# Configure the Azure provider
 terraform {
   required_providers {
     azurerm = {
@@ -14,7 +13,12 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "rg" {
-  name     = "personalSiteRG"
-  location = "centralus"
+module "vm_stack" {
+  source = "./modules/vm_stack"
+  resource_group_name = "elwood-website"
+  location = "Central US"
+  name = "debian-vm"
+  vm_size = "Standard_B1ls"
+  admin_username = "sean"
+  admin_ssh_public_key = file("~/.ssh/id_rsa.pub")
 }
