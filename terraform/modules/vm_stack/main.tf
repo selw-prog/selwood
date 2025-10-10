@@ -21,6 +21,14 @@ resource "azurerm_subnet" "this" {
   address_prefixes = var.subnet_address_prefixes
 }
 
+resource "azurerm_public_ip" "this" {
+  name = "${var.name}-public-ip"
+  location = var.location
+  resource_group_name = azurerm_resource_group.this.name
+  allocation_method = "Dynamic"
+  sku = "Basic"
+}
+
 resource "azurerm_network_interface" "this" {
   name = "${var.name}-nic"
   location = var.location
@@ -30,7 +38,13 @@ resource "azurerm_network_interface" "this" {
     name = "internal"
     subnet_id = azurerm_subnet.this.id
     private_ip_address_allocation = "Dynamic"
+    public_ip_address_id = azurerm_public_ip.this.id
   }
+}
+
+resource "azurerm_network_interface_security_group_association" "this" {
+  network_interface_id = azurerm_network_interface.this.id
+  network_security_group_id = var.nsg_id
 }
 
 resource "azurerm_linux_virtual_machine" "this" {
