@@ -13,12 +13,21 @@ provider "azurerm" {
   features {}
 }
 
+module "nsg" {
+  source = "./modules/nsg"
+  nsg_name = "home-nsg"
+  location = "Central US"
+  resource_group_name = var.resource_group_name
+  ssh_source_ip = "145.223.7.49/32"
+}
+
 module "vm_stack" {
   source = "./modules/vm_stack"
-  resource_group_name = "elwood-website"
+  resource_group_name = var.resource_group_name
   location = "Central US"
   name = "debian-vm"
   vm_size = "Standard_B1ls"
   admin_username = "sean"
   admin_ssh_public_key = file("~/.ssh/id_rsa.pub")
+  nsg_id = module.nsg.nsg_id
 }
