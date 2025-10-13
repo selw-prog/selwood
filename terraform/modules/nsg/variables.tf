@@ -1,5 +1,5 @@
 variable "nsg_name" {
-    description = "Name of the resource group"
+    description = "Name of the NSG"
     type        = string
 }
 
