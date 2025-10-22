@@ -14,7 +14,7 @@ provider "azurerm" {
 }
 
 module "nsg" {
-  source = "./modules/nsg"
+  source = "../../modules/nsg"
   nsg_name = "home-nsg"
   location = "Central US"
   resource_group_name = var.resource_group_name
@@ -22,7 +22,7 @@ module "nsg" {
 }
 
 module "vm_stack" {
-  source = "./modules/vm_stack"
+  source = "../../modules/vm_stack"
   resource_group_name = var.resource_group_name
   location = "Central US"
   name = "debian-vm"
