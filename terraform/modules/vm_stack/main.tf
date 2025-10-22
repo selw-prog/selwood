@@ -75,3 +75,27 @@ resource "azurerm_linux_virtual_machine" "this" {
     version = "latest"
   }
 }
+
+resource "null_resource" "provisioner" {
+  depends_on = [
+    azurerm_linux_virtual_machine.this,
+    azurerm_public_ip.this,
+    azurerm_network_interface_security_group_association.this
+  ]
+
+  connection {
+    type = "ssh"
+    user = var.admin_username
+    private_key = var.admin_ssh_private_key
+    host = azurerm_public_ip.this.ip_address
+    timeout = "5m"
+  }
+
+  provisioner "remote-exec" {
+    inline = [
+      "sudo apt-get update",
+      "sudo apt-get install -y nginx",
+      "sudo systemctl start nginx"
+    ]
+  }
+}
