@@ -30,6 +30,11 @@ variable "admin_ssh_public_key" {
   type        = string
 }
 
+variable "admin_ssh_private_key" {
+  description = "SSH public key for VM access"
+  type        = string
+}
+
 variable "vnet_address_space" {
   description = "Address space for the virtual network"
   type        = list(string)
